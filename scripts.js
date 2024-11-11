@@ -7,7 +7,7 @@ const totalImages = 134; // Supongamos que hay 133 imágenes
 let precachedImages = [];
 for (let i = 1; i <= totalImages; i++) {
     let image = new Image(); // Crear un nuevo objeto de imagen
-    image.src = `${path}${i}.png`; // Asignar la ruta de la imagen
+    image.src = `${path}${i}.png`; // Asignar la ruta de la imagen        
     precachedImages.push(image); // Añadirla al array de imágenes precargadas
 }
 
