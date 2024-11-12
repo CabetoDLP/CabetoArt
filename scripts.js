@@ -1,13 +1,13 @@
 let imagesColumnDOM = '';
 let selectedImageNames = [];
-let path = "https://res.cloudinary.com/dzipy5bme/image/upload/v1730864502/Dibujos/"; // Usa la URL completa para precargar
+let path = "https://res.cloudinary.com/dzipy5bme/image/upload/w_1000/q_auto:best/f_auto/v1/Dibujos/"; // Usa la URL completa para precargar
 const totalImages = 134; // Supongamos que hay 133 imágenes
 
 // Precargar las imágenes
 let precachedImages = [];
 for (let i = 1; i <= totalImages; i++) {
     let image = new Image(); // Crear un nuevo objeto de imagen
-    image.src = `${path}${i}.png`; // Asignar la ruta de la imagen        
+    image.src = `${path}${i}`; // Asignar la ruta de la imagen        
     precachedImages.push(image); // Añadirla al array de imágenes precargadas
 }
 

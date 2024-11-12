@@ -4,7 +4,7 @@
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     z-index: 3;
     margin-top: 2%;
@@ -83,7 +83,7 @@
 }
 
 .mosaic{
-    width: fit-content;
+    width: 100vw;
     display: flex;
     align-self: center;
     justify-content: center;
