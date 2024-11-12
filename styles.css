@@ -4,10 +4,10 @@
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    width: 100vw;
+    width: 96vw;
     position: fixed;
     z-index: 3;
-    margin-top: 2%;
+    margin-top: 5%;
     pointer-events: none;
 }
 
@@ -21,8 +21,8 @@
 }
 
 .circle-mask{
-    width: 17.5em; /* Tamaño de la máscara circular */
-    height: 17.5em;
+    width: 17.5vw; /* Tamaño de la máscara circular */
+    height: 17.5vw;
     border-radius: 50%; /* Hace la máscara circular */
     overflow: hidden; /* Oculta el contenido fuera del círculo */
     display: flex;
@@ -31,21 +31,21 @@
 }
 
 .profile-image-container img{
-    width: 30em;
-    height: 18em;
+    width: 30vw;
+    height: 18vw;
     border-radius: 50%;
 }
 
 .buttons-container{
     display: flex;
     flex-direction: row;
-    gap: 1.25em;
+    gap: 1.25vw;
     pointer-events: auto;
 }
 
 .social-media-button-container{
-    width: 100px;
-    height: 100px;
+    width: 7vw;
+    height: 7vw;
     border-radius: 10%;
     border: none;
     transition: transform 0.3s ease;
@@ -55,9 +55,9 @@
     transform: scale(1.2);
 }
 
-.social-media-button-container img{
-    width: 50px;
-    height: 100px;
+.social-media-button-container svg{
+    width: 3.5vw;
+    height: 3.5vw;
 }
 
 .image-container{
@@ -65,13 +65,14 @@
     position: relative;
     overflow: hidden;
     height: fit-content;
-    margin: 10px;
+    width: 24vw;
+    margin: 0.5vw;
 }
 
 .image-container img{
     display: flex;
     flex-direction: row;
-    width: 350px;
+    width: 24vw;
     height: auto;
     border-radius: 5%;
 }
@@ -79,11 +80,10 @@
 .image-column-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 .mosaic{
-    width: 100vw;
+    width: 96vw;
     display: flex;
     align-self: center;
     justify-content: center;
@@ -92,9 +92,16 @@
 }
 
 body{
-    width: 100%;
+    width: 100vw;
     justify-content: center;
     background-color: black;
+}
+
+h1{
+    font-size: 1.5vw;
+}
+p{
+    font-size: 1vw;
 }
 
 @media (max-width: 768px) {
@@ -116,12 +123,12 @@ body{
     }
 
     .image-container{
-        width: 20vw;
+        width: 22.5vw;
         height: auto;
     }
 
     .image-container img {
-        width: 20vw; /* Ajuste de tamaño para dispositivos móviles */
+        width: 22.5vw; /* Ajuste de tamaño para dispositivos móviles */
         height: auto;
     }
 
@@ -129,19 +136,28 @@ body{
         margin-top: 5%;
         width: fit-content;
         display: flex;
-        align-self: center;
         justify-content: center;
         position: absolute;
         opacity: 50%;
     }
 
+    .buttons-container{
+        gap: 3vw;
+    }
     .social-media-button-container{
-        width: 6em;
-        height: 6em;
+        width: 14vw;
+        height: 14vw;
     }
 
     .social-media-button-container svg{
-        width: 3.5em;
-        height: 3.5em;
+        width: 8vw;
+        height: 8vw;
+    }
+
+    h1{
+        font-size: 4vw;
+    }
+    p{
+        font-size: 2.5vw;
     }
 }
